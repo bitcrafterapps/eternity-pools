@@ -100,7 +100,7 @@ export const services: any[] = [
     "shortDescription": "Regular weekly cleaning to keep your pool crystal clear and swim-ready all year.",
     "description": "Our comprehensive weekly cleaning service includes skimming, brushing, vacuuming, chemical balancing, and equipment checks. We handle everything so you can just enjoy your pool.",
     "icon": "🏊",
-    "image": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    "image": "/images/services/weekly-pool-cleaning.png"
   },
   {
     "name": "Pool Equipment Repair",
@@ -108,7 +108,7 @@ export const services: any[] = [
     "shortDescription": "Expert repair services for pumps, filters, heaters, and all pool equipment.",
     "description": "From pump failures to filter issues, our certified technicians diagnose and repair all types of pool equipment. We carry parts for most major brands and offer same-day service when possible.",
     "icon": "🔧",
-    "image": "https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    "image": "/images/services/pool-equipment-repair.png"
   },
   {
     "name": "Green Pool Recovery",
@@ -116,7 +116,7 @@ export const services: any[] = [
     "shortDescription": "Transform your green, algae-filled pool back to crystal clear in days.",
     "description": "Don't drain your green pool! Our proven recovery process eliminates algae and restores water clarity. We've rescued thousands of neglected pools and can save yours too.",
     "icon": "🌿",
-    "image": "https://images.unsplash.com/photo-1598902108854-10e335adac99?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    "image": "/images/services/green-pool-recovery.png"
   },
   {
     "name": "Pool Tile Cleaning",
@@ -124,7 +124,7 @@ export const services: any[] = [
     "shortDescription": "Remove calcium buildup and restore the beauty of your pool tile.",
     "description": "Our bead blasting and acid washing techniques safely remove stubborn calcium deposits, stains, and discoloration from your pool tile and waterline without damaging surfaces.",
     "icon": "✨",
-    "image": "https://images.unsplash.com/photo-1562778612-e1e0cda9915c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    "image": "/images/services/pool-tile-cleaning.png"
   },
   {
     "name": "Pool Resurfacing",
@@ -132,7 +132,7 @@ export const services: any[] = [
     "shortDescription": "Revitalize your pool with professional resurfacing and refinishing services.",
     "description": "Whether you need plaster repair, pebble finish, or a complete resurface, we transform worn and stained pool surfaces into beautiful, durable finishes that last for years.",
     "icon": "🎨",
-    "image": "https://images.unsplash.com/photo-1572331165267-854da2b10ccc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    "image": "/images/services/pool-resurfacing.png"
   },
   {
     "name": "Salt System Installation",
@@ -140,7 +140,7 @@ export const services: any[] = [
     "shortDescription": "Convert to a salt water pool for softer water and easier maintenance.",
     "description": "Enjoy the benefits of salt water swimming! We install and service salt chlorine generators from leading brands. Say goodbye to harsh chlorine and hello to silky smooth water.",
     "icon": "🧂",
-    "image": "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    "image": "/images/services/salt-system-installation.png"
   }
 ];
 
