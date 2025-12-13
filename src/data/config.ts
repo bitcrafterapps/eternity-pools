@@ -32,7 +32,7 @@ export const siteConfig = {
   industry: {
     type: "Pool Service",
     slug: "pool-service",
-    serviceNoun: "Pool Experts",
+    serviceNoun: "Experts",
     serviceVerb: "pool service",
     emergencyService: true,
     schemaType: "HomeAndConstructionBusiness",
