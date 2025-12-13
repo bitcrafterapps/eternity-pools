@@ -33,72 +33,66 @@ export default function ServicePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
+      {/* Hero Section */}
+      <section className="relative py-24 min-h-[60vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url("${service.image || `https://placehold.co/1920x1080/1a1a2e/ffffff?text=${encodeURIComponent(service.name)}`}")`,
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/70 to-gray-900/90" />
+        
+        <div className="container-custom relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-4xl mx-auto text-center"
+          >
+            <Link
+              href="/services"
+              className="inline-flex items-center text-white/70 hover:text-white mb-6 transition-colors bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full backdrop-blur-sm"
             >
-              <Link
-                href="/services"
-                className="inline-flex items-center text-white/70 hover:text-white mb-4 transition-colors"
-              >
-                ← Back to Services
-              </Link>
-              <h1 className="text-4xl sm:text-5xl font-heading font-bold text-white mb-6">
-                {service.name}
-              </h1>
-              <p className="text-xl text-white/80 mb-8">
-                {service.description || service.shortDescription}
-              </p>
+              ← Back to Services
+            </Link>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-bold text-white mb-6 leading-tight">
+              {service.name}
+            </h1>
+            <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl mx-auto font-light">
+              {service.description || service.shortDescription}
+            </p>
 
-              {/* Trust Points */}
-              <div className="flex flex-wrap gap-4 mb-8">
-                <div className="flex items-center gap-2 text-white/90">
-                  <Shield className="h-5 w-5 text-primary" />
-                  <span>Licensed & Insured</span>
+            {/* Trust Points */}
+            <div className="flex flex-wrap justify-center gap-4 mb-10">
+              <div className="flex items-center gap-2 text-white/90 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-sm border border-white/10">
+                <Shield className="h-5 w-5 text-primary" />
+                <span className="font-medium">Licensed & Insured</span>
+              </div>
+              <div className="flex items-center gap-2 text-white/90 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-sm border border-white/10">
+                <Award className="h-5 w-5 text-primary" />
+                <span className="font-medium">{siteConfig.company.yearsInBusiness}+ Years Experience</span>
+              </div>
+              {siteConfig.industry.emergencyService && (
+                <div className="flex items-center gap-2 text-white/90 bg-white/10 px-4 py-2 rounded-lg backdrop-blur-sm border border-white/10">
+                  <Clock className="h-5 w-5 text-primary" />
+                  <span className="font-medium">24/7 Emergency</span>
                 </div>
-                <div className="flex items-center gap-2 text-white/90">
-                  <Award className="h-5 w-5 text-primary" />
-                  <span>{siteConfig.company.yearsInBusiness}+ Years Experience</span>
-                </div>
-                {siteConfig.industry.emergencyService && (
-                  <div className="flex items-center gap-2 text-white/90">
-                    <Clock className="h-5 w-5 text-primary" />
-                    <span>24/7 Emergency</span>
-                  </div>
-                )}
-              </div>
+              )}
+            </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" asChild>
-                  <Link href="/free-estimate">Get Free Estimate</Link>
-                </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900" asChild>
-                  <a href={formatPhoneLink(siteConfig.company.phone)}>
-                    <Phone className="h-5 w-5 mr-2" />
-                    {formatPhone(siteConfig.company.phone)}
-                  </a>
-                </Button>
-              </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              className="relative"
-            >
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src={service.image || `https://placehold.co/800x600/1a1a2e/ffffff?text=${encodeURIComponent(service.name)}`}
-                  alt={service.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </motion.div>
-          </div>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Button size="xl" variant="default" className="text-lg px-8" asChild>
+                <Link href="/free-estimate">Get Free Estimate</Link>
+              </Button>
+              <Button size="xl" variant="outline" className="text-lg px-8 border-white text-white hover:bg-white hover:text-gray-900 backdrop-blur-sm" asChild>
+                <a href={formatPhoneLink(siteConfig.company.phone)}>
+                  <Phone className="h-5 w-5 mr-2" />
+                  {formatPhone(siteConfig.company.phone)}
+                </a>
+              </Button>
+            </div>
+          </motion.div>
         </div>
       </section>
 

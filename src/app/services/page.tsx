@@ -16,7 +16,7 @@ export default function ServicesPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url("https://images.unsplash.com/photo-1572331165267-854da2b10ccc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")`,
+            backgroundImage: `url("/images/services/weekly-pool-cleaning.png")`,
           }}
         />
         <div className="absolute inset-0 bg-black/70" />
