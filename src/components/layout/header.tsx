@@ -42,18 +42,10 @@ export function Header() {
               <span className="w-1.5 h-1.5 bg-white/60 rounded-full" />
               Serving {siteConfig.serviceArea.primaryCity} & Surrounding Areas
             </span>
-            {siteConfig.industry.emergencyService && (
-              <span className="flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
-                </span>
-                24/7 Emergency Service
-              </span>
-            )}
+
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-white/80">Licensed & Insured {siteConfig.company.license && `• Lic# ${siteConfig.company.license}`}</span>
+            <span className="text-white/80">Licensed & Insured C61/D35 s{siteConfig.company.license && `• Lic# ${siteConfig.company.license}`}</span>
           </div>
         </div>
       </div>
@@ -77,8 +69,8 @@ export function Header() {
                 width={400}
                 height={120}
                 className={cn(
-                  "w-auto transition-all duration-300",
-                  isScrolled ? "h-16" : "h-20 lg:h-24"
+                  "w-auto max-w-[80vw] object-contain transition-all duration-300",
+                  isScrolled ? "h-20" : "h-40 lg:h-24"
                 )}
                 priority
               />

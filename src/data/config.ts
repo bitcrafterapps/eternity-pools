@@ -13,8 +13,8 @@ export const siteConfig = {
     state: "CA",
     stateFullName: "California",
     zip: "92688",
-    license: "",
-    yearsInBusiness: "10",
+    license: "1003581",
+    yearsInBusiness: "15",
   },
 
   // Branding
@@ -34,7 +34,7 @@ export const siteConfig = {
     slug: "pool-service",
     serviceNoun: "Experts",
     serviceVerb: "pool service",
-    emergencyService: true,
+    emergencyService: false,
     schemaType: "HomeAndConstructionBusiness",
   },
 
@@ -42,7 +42,7 @@ export const siteConfig = {
   serviceArea: {
     areas: "Rancho Santa Margarita, Trabuco Canyon, Robinson Ranch, Coto de Caza, Dove Canyon, Mission Viejo, Ladera Ranch, Laguna Hills, Lake Forest".split(",").map(s => s.trim()),
     radius: "20",
-    primaryCity: "Rancho Santa Margarita",
+    primaryCity: "South Orange County",
   },
 
   // Social Links
@@ -78,8 +78,8 @@ export const siteConfig = {
 
   // Review Stats
   reviews: {
-    rating: "4.9",
-    count: "150",
+    rating: "5",
+    count: "1",
     googleReviewLink: "",
   },
 
@@ -88,7 +88,7 @@ export const siteConfig = {
     weekdays: "8:00 AM - 5:00 PM",
     saturday: "8:00 AM - 5:00 PM",
     sunday: "Closed",
-    emergencyNote: "Emergency service available for equipment failures",
+    emergencyNote: "",
   },
 };
 
@@ -126,14 +126,7 @@ export const services: any[] = [
     "icon": "✨",
     "image": "/images/services/pool-tile-cleaning.png"
   },
-  {
-    "name": "Pool Resurfacing",
-    "slug": "pool-resurfacing",
-    "shortDescription": "Revitalize your pool with professional resurfacing and refinishing services.",
-    "description": "Whether you need plaster repair, pebble finish, or a complete resurface, we transform worn and stained pool surfaces into beautiful, durable finishes that last for years.",
-    "icon": "🎨",
-    "image": "/images/services/pool-resurfacing.png"
-  },
+
   {
     "name": "Salt System Installation",
     "slug": "salt-system-installation",
@@ -147,26 +140,12 @@ export const services: any[] = [
 // Testimonials
 export const testimonials: any[] = [
   {
-    "name": "Jennifer Martinez",
+    "name": "The Friedman Family",
     "location": "Rancho Santa Margarita, CA",
     "text": "Eternity Pool has maintained our pool for years now. They're always on time, professional, and our pool has never looked better. Highly recommend!",
     "rating": 5,
     "service": "Weekly Pool Cleaning"
   },
-  {
-    "name": "Robert Thompson",
-    "location": "Mission Viejo, CA",
-    "text": "We bought a house with a neglected green pool. Eternity Pool had it sparkling in just a few days! Amazing transformation and fair pricing.",
-    "rating": 5,
-    "service": "Green Pool Recovery"
-  },
-  {
-    "name": "Lisa Chen",
-    "location": "Ladera Ranch, CA",
-    "text": "Our pool pump died on a Saturday before a party. They came out same day and had us back up and running. Lifesavers! Great emergency service.",
-    "rating": 5,
-    "service": "Pool Equipment Repair"
-  }
 ];
 
 // FAQ Items

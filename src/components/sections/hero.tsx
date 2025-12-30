@@ -99,7 +99,7 @@ export function HeroSection() {
 
             {/* Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
-              {siteConfig.company.city}&apos;s Most Trusted{" "}
+              {siteConfig.serviceArea.primaryCity}&apos;s Most Trusted{" "}
               <span className="relative">
                 <span className="text-gradient bg-gradient-to-r from-cyan-400 to-primary bg-clip-text text-transparent">
                   {siteConfig.industry.type}
